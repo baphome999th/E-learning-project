@@ -31,6 +31,7 @@ function onSubmit(event) {
     .then((data) => data.json())
     .then((res) => {
       if (res.message) {
+        localStorage.setItem('authToken', res.token); // almacenar el token en el local storage
         window.location.replace("/home.html"); // redireccionar al usuario a la página principal
         alert("Bienvenido! " +  res.email);
 
