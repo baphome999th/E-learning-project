@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const submit = document.querySelector("#submit");
     const form = document.querySelector("#form_control");
@@ -10,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const Password = document.querySelector("#password");
     const MunicipalityId  = document.querySelector("#municipality")
     const InstitutionId = document.querySelector("#institution");
+    
     const UserTypeId = document.querySelector("#UserTypeId");
     
 
@@ -31,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log("municipio:", MunicipalityId .value);
       console.log("institucion:", InstitutionId .value);
       console.log("usuario: ", UserTypeId.value);
+
      
     
   
@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
         Password: Password.value,
         MunicipalityId : MunicipalityId .value,
         InstitutionId: InstitutionId.value,
-        UserTypeId: UserTypeId.value
+        UserTypeId: UserTypeId.value,
+        
         
       };
   

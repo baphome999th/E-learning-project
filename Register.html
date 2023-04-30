@@ -169,13 +169,25 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="subject">Subject</label> -->
-								<label> Municipio </label>
-								<select id ="municipality" style="width:100% ;height: 55px;" class="form-control" name="municipality">
-										
+								<label>Departamento </label>
+								<select id ="DepartmentId" style="width:100% ;height: 55px;" class="form-control" name="department">
+										<option value="0">Seleccionar</option>
 								</select>
 							</div>
 						</div>
 
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<label> Municipio </label>
+								<select id ="municipality" style="width:100% ;height: 55px;" class="form-control" name="municipality">
+									<option value="0">Seleccionar</option>
+								</select>
+							</div>
+						</div>
+
+
+						
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="subject">Subject</label> -->
@@ -270,6 +282,7 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
+	<script src="./js/fetchDepartment.js"></script>
 	<script src="./js/fetchInstitution.js"></script>
 	<script src="./js/fetchMunicipality.js"></script>
 	<script src="./js/fetchIds.js"></script>
