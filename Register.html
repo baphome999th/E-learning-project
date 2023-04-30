@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Registro - Ubuntu</title>
+	<title>Ubuntu</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -66,14 +66,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Ubuntu<span>.</span></a></div>
+						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>AulaUnida<span>.</span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li><a href="index.html">Inicio</a></li>
 							<li><a href="courses.html">Cursos</a></li>
 							<li><a href="teacher.html">Profesores</a></li>
-							<li><a href="about.html">Acerca de nosotros</a></li>
+							<li></li>
 						
 							<li class="has-dropdown">
 							
@@ -119,19 +119,41 @@
 					<h3>Formulario de Registro</h3>
 					<form action="#">
 						<div class="row form-group">
+							
 							<div class="col-md-6">
 								<!-- <label for="fname">First Name</label> -->
-								<input type="text" id="f_username" class="form-control" placeholder="Estudiante o profesor">
+								<label> Nombre </label>
+								<input type="text" id="f_username" class="form-control" placeholder="Nombre">
 							</div>
 							<div class="col-md-6">
 								<!-- <label for="lname">Last Name</label> -->
-								<input type="password" id="password" class="form-control" placeholder="Contraseña">
+								<label>Apellido </label>
+								<input type="text" id="l_name" class="form-control" placeholder="Apellidos">
 							</div>
 						</div>
 
 						<div class="row form-group">
+							<div class="col-md-6">
+								<!-- <label for="subject">DoB</label> -->
+								<label> Fecha de nacimiento</label>
+								<input type="date" id="user_DoB" class="form-control" placeholder="">
+							</div>
+							<div class="col-md-6">
+								<!-- <label for=""></label> -->
+								<!-- this is a combobox selection-->
+								<label> Rol</label>
+									<select id ="UserTypeId" style="width:100% ;height: 55px;" class="form-control" name="userType">
+										
+ 									 </select>
+							</div>
+						</div>
+
+				
+
+						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="email">Email</label> -->
+								<label> Email </label>
 								<input type="email" id="user_email" class="form-control" placeholder="Direccion Email">
 							</div>
 						</div>
@@ -139,13 +161,49 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="subject">Subject</label> -->
-								<input type="number" id="user_phonenumber" class="form-control" placeholder="Numero telefonico">
+								<label> Contraseña  </label>
+								<input type="password" id="password" class="form-control" placeholder="Contraseña">
 							</div>
 						</div>
 
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<label>Departamento </label>
+								<select id ="DepartmentId" style="width:100% ;height: 55px;" class="form-control" name="department">
+										<option value="0">Seleccionar</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<label> Municipio </label>
+								<select id ="municipality" style="width:100% ;height: 55px;" class="form-control" name="municipality">
+									<option value="0">Seleccionar</option>
+								</select>
+							</div>
+						</div>
+
+
+						
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<label>Institución </label>
+								<select id ="institution" style="width:100% ;height: 55px;" class="form-control" name="institution">
+										
+								</select>
+							</div>
+						</div>
+						
 						<div class="form-group">
 							<button type="submit" id="submit" value="Registrarme" class="btn btn-primary">Registrarme</button>
+
+							<p><a href="login.html">Ya tienes cuenta ? </a> </p>
 						</div>
+						
 
 					</form>		
 				</div>
@@ -224,7 +282,9 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+	<script src="./js/fetchDepartment.js"></script>
+	<script src="./js/fetchInstitution.js"></script>
+	<script src="./js/fetchIds.js"></script>
     <script src="./js/fetch.js"></script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
