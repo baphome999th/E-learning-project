@@ -18,10 +18,10 @@ fetch('http://localhost:3000/getUser', {
   console.log('Valor de UserTypeId:', UserTypeId); // Agregar este console.log
   if (UserTypeId === 1) {
     // Código para estudiante
-    window.location.replace("./sneat-1.0.0/html/estudiante.html");
+    window.location.replace("./internalApp/html/estudiante.html");
   } else if (UserTypeId === 2) {
     // Código para profesor
-    window.location.replace("./sneat-1.0.0/html/profesor.html");
+    window.location.replace("./internalApp/html/profesor.html");
   } else {
     throw new Error('Tipo de usuario desconocido');
   }
